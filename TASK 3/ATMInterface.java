@@ -42,22 +42,22 @@ class ATM {
     // Step 3: ATM Functional Methods
     public void withdraw(double amount) {
         if (account.withdraw(amount)) {
-            System.out.println("✅ Withdrawal successful. Amount: ₹" + amount);
+            System.out.println(" Withdrawal successful. Amount: ₹" + amount);
         } else {
-            System.out.println("❌ Withdrawal failed. Insufficient balance or invalid amount.");
+            System.out.println("Withdrawal failed. Insufficient balance or invalid amount.");
         }
     }
 
     public void deposit(double amount) {
         if (account.deposit(amount)) {
-            System.out.println("✅ Deposit successful. Amount: ₹" + amount);
+            System.out.println("Deposit successful. Amount: ₹" + amount);
         } else {
-            System.out.println("❌ Deposit failed. Please enter a valid amount.");
+            System.out.println("Deposit failed. Please enter a valid amount.");
         }
     }
 
     public void checkBalance() {
-        System.out.println("💰 Current Balance: ₹" + account.getBalance());
+        System.out.println("Current Balance: ₹" + account.getBalance());
     }
 }
 
@@ -100,12 +100,12 @@ public class ATMInterface {
                     break;
 
                 case 4:
-                    System.out.println("🙏 Thank you for using our ATM. Goodbye!");
+                    System.out.println("Thank you for using our ATM. Goodbye!");
                     sc.close();
                     return;
 
                 default:
-                    System.out.println("⚠️ Invalid choice. Please try again.");
+                    System.out.println(" Invalid choice. Please try again.");
             }
         }
     }
